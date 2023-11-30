@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LaTeX Css</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/latex.css">
+    <link rel="stylesheet" href="css/prism.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header>
+        <h1><span class="latex">L<span>a</span>T<span>e</span>X</span>.css</h1>
+        <p class="author">John Doe</p>
+    </header>
+    <main>
+        <article class="abstract">
+            <h2>Abstract</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut blanditiis, quos aliquid et quae qui placeat
+                earum similique modi, nam, quibusdam porro dolorem minima? Animi consequatur amet consectetur earum
+                tenetur.</p>
+        </article>
+
+
+        <nav role="navigation">
+            <ol>
+                <li><a href="#first-section">First Section</a></li>
+                <li><a href="#second-section">First Section</a></li>
+                <li><a href="#environment">Environments</a>
+                    <ol>
+                        <li><a href="#theorems">Theorem and Proofs</a></li>
+                        <li><a href="#definitions">Definition and Lemmas</a></li>
+                    </ol>
+                </li>
+            </ol>
+        </nav>
+        <section>
+            <h2 id="first-section">First Section</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, debitis sed. Soluta quis maxime fuga
+                perspiciatis? Id eos fugiat harum cum fugit molestiae dolorem dignissimos autem! Perspiciatis facilis
+                earum deleniti.</p>
+            <p> $$(x+y)^{n}=\sum_{k=0}^{n}\left(\begin{array}{l}n \\
+                k\end{array}\right) x^{n-k}
+                y^{k}=\sum_{k=0}^{n}\left(\begin{array}{l}n \\ k\end{array}\right)
+                x^{k} y^{n-k}$$</p>
+            $\int f(x) dx $ Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero mollitia facere sed cumque
+            velit ipsam repellat consectetur doloribus vitae earum dolore nostrum atque, sunt exercitationem aspernatur
+            dicta dolorem autem deserunt.
+        </section>
+
+        <!-- second section -->
+        <section>
+            <h2 id="second-section">Second section</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eos ipsa quos sed. Vero unde officia
+                molestiae nemo minus a vel doloremque eum! Eius omnis esse veniam officiis, qui quis?</p>
+        </section>
+
+        <!-- environment section -->
+        <section>
+            <h2 id="environment">Environment</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aspernatur eaque ab nulla, numquam
+                libero quaerat rerum iusto dolorum omnis reprehenderit alias neque nobis ducimus incidunt repudiandae
+                rem totam dolore?</p>
+            <h3 id="theorems">Theorem and Proofs</h3>
+            <div class="Theorem and proofs">
+                The real numbers $\mathbb{R}$ are uncountable.
+            </div>
+            <div class="proof">
+                If $\mathbb{R}$ is countable, then [0, 1] is countable as well. Hence
+                there exists a map C from $\mathbb{N}$ onto [0, 1] with
+                $$C(n)=\sum_{i=1}^{\infty} c_{i}(n) 10^{-i}$$ where $c_{i}(n)
+                \in\{0,1, \ldots, 9\},$ are the digits in decimal expansion. Now
+                consider a real number $$x=\sum_{i=1}^{\infty} \bar{c}_{i} 10^{-i}
+                \in[0,1]$$ with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$
+                for all $n \in \mathbb{N} .$ Hence $C$ is not onto. A contradiction.
+                \end
+            </div>
+
+            <h3 id="definitions">Lemma and Proofs</h3>
+            <div class="lemma">
+                The real numbers $\mathbb{R}$ are uncountable.
+            </div>
+            <div class="proof">
+                If $\mathbb{R}$ is countable, then [0, 1] is countable as well. Hence
+                there exists a map C from $\mathbb{N}$ onto [0, 1] with
+                $$C(n)=\sum_{i=1}^{\infty} c_{i}(n) 10^{-i}$$ where $c_{i}(n)
+                \in\{0,1, \ldots, 9\},$ are the digits in decimal expansion. Now
+                consider a real number $$x=\sum_{i=1}^{\infty} \bar{c}_{i} 10^{-i}
+                \in[0,1]$$ with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$
+                for all $n \in \mathbb{N} .$ Hence $C$ is not onto. A contradiction.
+                \end
+            </div>
+
+
+            <div class="definition">
+                Definition of some of the things.....
+            </div>
+        </section>
+
+
+        <section>
+            <h2>Formatting Texts</h2>
+            <div>
+                Some text can be <strong>bold</strong> and some of them can be emphasized.
+                <blockquote>
+                    Give me six hours to chop down a tree and I will spend the first four sharpening the axe. <cite> -
+                        Abraham Lincoln</cite>
+                </blockquote>
+            </div>
+        </section>
+
+
+        <section>
+            <h2>Table and images</h2>
+            <table>
+                <caption>Caption of the table</caption>
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Text 1</td>
+                        <td>Text 2</td>
+                        <td>Text 3</td>
+                    </tr>
+                    <tr>
+                        <td>Text 1</td>
+                        <td>Text 2</td>
+                        <td>Text 3</td>
+                    </tr>
+                    <tr>
+                        <td>Text 1</td>
+                        <td>Text 2</td>
+                        <td>Text 3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Images</h2>
+            <figure>
+                <img src="image/image1.png" alt="">
+            </figure>
+            <figcaption>Caption for the figure...</figcaption>
+        </section>
+
+        <section>
+            <h2>Syntax Highlighting</h2>
+            <pre>
+                <code class="language-latex">
+                    \section{Some section...}
+	                \begin{enumerate}
+		            \item first element
+		            \item second element
+		            \item third element
+	                \end{enumerate}
+                </code>
+            </pre>
+        </section>
+
+
+
+
+    </main>
+
+    <script src="" async defer></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [["$", "$"], ["\{", "\}"]]
+            }
+        }
+    </script>
+    <script src="js/prism.js"></script>
+</body>
+
+</html>
